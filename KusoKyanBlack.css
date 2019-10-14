@@ -1,0 +1,709 @@
+/* ----------------------------------------
+  Base Style Seet
+
+    2- 1.全体レイアウト
+    2- 2.ヘッダーコンテンツ
+    2- 3.グローバルメニュー
+    2- 4.サイドバーコンテンツ
+    2- 5.フッターコンテンツ
+    2- 6.リンク
+    2- 7.ナビアイコン
+    2- 8.見出しタグ(hタグ）
+    2- 9.text,強調
+    2-10.リスト
+    2-11.共通BOX
+    2-12.パンクズ
+    2-13.テーブル
+---------------------------------------- */
+ html {
+    background: black;
+}
+body {
+    font-size:12px;
+    color: white;
+    line-height:1.8;
+    background-color: black;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+    overflow: hidden;
+    background: black;
+}
+* html body {
+    font-size:75%;
+}
+header, footer, nav, section, article, figure, aside {
+    display:block;
+}
+/* ----------------------------------------
+  2-1.全体レイアウト
+---------------------------------------- */
+ #commonHeader {
+    background: #ec6c00;
+    padding: 13px 0 12px 20px;
+}
+article {
+}
+footer {
+    background: #ec6c00;
+    color: #fff;
+    text-align: center;
+    padding: 4px 0 5px 0;
+}
+aside {
+    width: 235px;
+    min-height: 970px;
+    float: left;
+    background-color: black;
+}
+.wrapper {
+    width: 1040px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: black;
+}
+#mainContents {
+    width: 685px;
+    float: right;
+    padding: 5px 60px 65px 60px;
+}
+#userinfo {
+    text-align:right;
+}
+/* ----------------------------------------
+  2-2.ヘッダーコンテンツ
+---------------------------------------- */
+ #commonHeader h1 {
+    width: 109px;
+    height: 22px;
+}
+#commonHeader a {
+    display: block;
+}
+#commonHeader img {
+    vertical-align: top;
+}
+#commonHeader button {
+    display:none;
+}
+/* ----------------------------------------
+  2-3.グローバルメニュー
+---------------------------------------- */
+ #gnav {
+    font-size: 11px;
+}
+.menuCateBox {
+    padding: 20px 0 15px 20px;
+    border-bottom: 1px #e6e6e6 solid;
+}
+.menuCateBox p {
+    margin-bottom: 2px;
+}
+/* 20151125 出席率非表示対応 */
+ .menuCateBox {
+    display: none;
+}
+.menuList, .menuBlock {
+    padding: 15px 0 15px 0;
+    border-bottom: 1px r solid;
+    /* width: 3003px; */
+}
+ul.menuList.bdrNone {
+}
+.menuList > li {
+    margin-bottom: 5px;
+}
+.menuList > li a, .menuList > li p, .menuList > p, .menuBlock > li a, .menuBlock > p {
+    font-size: 11.5px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 2px;
+    /* margin-left: 3px; */
+    width:225px;
+}
+.menuList > li a::before {
+    display: inline-block;
+    position:relative;
+    content:"";
+    font-size: 13px;
+    width: 6px;
+    height: 7px;
+    border-top: 1px solid #ec6c00;
+    border-right: 1px solid #ec6c00;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-right: 7px;
+}
+.menuList >li >a {
+    /* color: #646464; */
+    color: white;
+}
+#gnav .current {
+    background: #464646;
+    line-height: 1.7;
+}
+.attendanceRateNumber {
+    font-size: 15px;
+    font-weight: bold;
+    color: #001148;
+}
+.navCategoryList {
+    text-indent: 1em;
+}
+.navCategoryList > li {
+    margin-bottom: 2px;
+}
+.navCategoryList a {
+    font-size: 11.5px;
+    /*  color: #a0a0a0; */
+    color: white;
+    letter-spacing: 1.5px;
+}
+.navCategoryList a:before {
+    content:"";
+    margin: 0 2px;
+}
+.listHome {
+    font-size: 13.5px;
+}
+.navCategoryList a::before {
+    display: inline-block;
+    position:relative;
+    content:"";
+    font-size: 13px;
+    width: 6px;
+    height: 7px;
+    border-top: 1px solid #ec6c00;
+    border-right: 1px solid #ec6c00;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-right: 7px;
+}
+/* ----------------------------------------
+  2-4.フッターコンテンツ
+---------------------------------------- */
+
+/* ----------------------------------------
+  2-6.リンク
+---------------------------------------- */
+ a {
+    text-decoration: none;
+    /*  color: #646464; */
+    color: red;
+}
+#gnav a:hover {
+    background: #464646;
+    color: red;
+}
+a img.btn:hover, button img.btn:hover {
+    filter: alpha(opacity=80);
+    -moz-opacity:0.80;
+    opacity:0.80;
+}
+/* ----------------------------------------
+  2-8.見出し(hタグ）
+---------------------------------------- */
+ .cateTtl {
+    width: 695px;
+    float: left;
+    /* background-color: #6495ED; */
+    /* padding-top:6px; */
+    /* padding-bottom:6px; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 2px;
+}
+h2.cateTtl {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 2px;
+}
+/* ----------------------------------------
+  2-9.text,強調
+---------------------------------------- */
+
+/* ----------------------------------------
+  2-9.イメージ
+---------------------------------------- */
+
+/* ----------------------------------------
+  2-10.リスト
+---------------------------------------- */
+
+/* ----------------------------------------
+  2-11.共通BOX
+---------------------------------------- */
+
+/* ----------------------------------------
+  2-12.パンクズ
+---------------------------------------- */
+
+/* ----------------------------------------
+  2-13.テーブル
+---------------------------------------- */
+ tr[onclick]:hover td {
+    background:#464646
+}
+tr:not([onclick]):hover a {
+    background:#464646
+}
+
+/* ----------------------------------------
+  page Style Seet
+
+    3-1. index
+    3-2. login
+    3-3. カレンダー
+    3-4.
+    3-5.
+    3-6.
+    3-7.
+    3-8.
+    3-9.
+    3-10.
+    3-11.
+---------------------------------------- */
+
+/*table*/
+ .pointer {
+    cursor:pointer;
+}
+.tabelType01 {
+    table-layout: fixed;
+    width: 100%;
+}
+.tabelType01 th {
+    background: black;
+    border: 1px #e4ecee solid;
+    border-top: 2px #ec6c00 solid;
+    border-bottom: 1px #FFFFFF solid;
+    font-weight: normal;
+    /* text-align: center; */
+    text-align: left;
+    /* padding: 12px 8px; */
+    font-size: 13px;
+    padding: 6px 0px 6px 9px;
+}
+.tabelType01 td {
+    background: black;
+    border: 1px #e6e6e6 solid;
+    border-top: 1px #e6e6e6 solid;
+    border-bottom: 1px rgb(188, 188, 204) solid;
+    text-align: left;
+    /* padding: 15px 8px; */
+    padding: 5px 0 5px 8px;
+    height: 0px;
+    vertical-align: top;
+}
+.tabelType01 tr.on th, .tabelType01 tr.on td {
+    background-color:black;
+    cursor:pointer;
+}
+.tabelType02 {
+    table-layout: fixed;
+    width: 100%;
+}
+.tabelType02 th {
+    background: black;
+    font-weight: normal;
+    border-left: 2px #ec6c00 solid;
+    border-right: 1px #FFFFFF solid;
+    border-bottom: 1px #e6e6e6 solid;
+    border-top: 1px #e6e6e6 solid;
+    text-align: left;
+    padding-left: 6px;
+    /* padding: 6px 0px 6px 9px; */
+    font-size: 13px;
+}
+.tabelType02 td {
+    background: black;
+    border: 1px #e6e6e6 solid;
+    text-align: left;
+    border-left: 1px #e6e6e6 solid;
+    border-right: 1px rgb(188, 188, 204) solid;
+    padding: 6px 0px 6px 9px;
+    font-size: 13px;
+    padding-left: 6px;
+    vertical-align: top;
+    height: 0px;
+}
+.tabelType02 tr.on th, .tabelType02 tr.on td {
+    background-color:black;
+    cursor:pointer;
+}
+.basic_info td {
+    background: black;
+    border-top: 1px #e6e6e6 solid;
+    border-bottom: 1px #e6e6e6 solid;
+    text-align:left;
+    /* padding: 15px 8px; */
+    /* padding: 5px 0 5px 8px; */
+    height: 0px;
+}
+/*一覧へ*/
+ td.toAll {
+    background-color: transparent;
+    border: none;
+    /* vertical-align: top; */
+}
+.classAnnounce {
+    padding-top:33px
+}
+.classAnnounce .tabelType01 {
+    line-height: 16px;
+}
+.classAnnounce .tabelType01 th {
+    font-size: 13px;
+    /* padding: 15px 0 15px 9px; */
+    padding: 6px 0 6px 9px;
+}
+.classAnnounce .tabelType01 td {
+    height: 0px;
+    /* padding: 15px 0 15px 8px; */
+    padding: 5px 0 5px 8px;
+    vertical-align: top;
+}
+.tableWide1_1 {
+    width:100px;
+}
+.tableWide1_2 {
+    width:100px;
+}
+.tableWide1_3 {
+    width:55px;
+}
+.tableWide1_4 {
+    width:100px;
+}
+.tableWide2_1 {
+    width:80px;
+}
+.tableWide2_2 {
+    width:98px;
+}
+.tableWide2_3 {
+    width:38px;
+}
+.tableWide2_4 {
+    width:115px;
+}
+.tableWide2_5 {
+    width:240px;
+}
+.tableWide2_6 {
+    width:145px;
+}
+.tableWide3_1 {
+    width:80px;
+}
+.tableWide3_2 {
+    width:40px;
+}
+.tableWide3_3 {
+    width:110px;
+}
+.tableWide3_4 {
+    width:350px;
+}
+.tableWide4_1 {
+    width:80px;
+}
+.tableWide4_2 {
+    width:100px;
+}
+.tableWide4_3 {
+    width:45px;
+}
+.tableWide4_4 {
+    width:360px;
+}
+.tableWide5_1 {
+    width:80px;
+}
+.tableWide5_2 {
+    width:45px;
+}
+.tableWide5_3 {
+    width:90px;
+}
+.tableWide6_1 {
+    width:100px;
+}
+.tableWide6_2 {
+    width:163px;
+}
+.tableWide6_3 {
+    width:342px;
+}
+/*解答欄*/
+ .threeQuestionsArea {
+    background: black;
+    padding: 15px 33px 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color:white;
+}
+.threeQuestionsArea li {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+.question1to3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.questionRadioBtn {
+    margin-right: 10px;
+    display: block;
+}
+.questionLabel {
+    display: block;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+.questionCheckBox {
+    margin-right: 10px;
+    display: block;
+}
+.questionInput {
+    width: 100%;
+    height: 85px;
+    resize: none;
+}
+/*ボタン関連*/
+ .btnBack {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    padding: 12px 0;
+    background: #646464;
+    font-size: 14px;
+    color:#fff;
+    margin :0px 50px 0px 50px;
+    height:40px;
+}
+.btnNext {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    padding: 12px 0 50;
+    background: #646464;
+    font-size: 14px;
+    color:#FFF;
+    margin :0px 50px 0px 50px;
+    height:40px;
+}
+.btnArea {
+    text-align: center;
+    margin: 0 100 auto;
+}
+.btnArea a:hover {
+    text-decoration: none;
+    filter: alpha(opacity=80);
+    -moz-opacity:0.80;
+    opacity:0.80;
+}
+#mainContents button {
+    border: none;
+}
+/* ----------------------------------------
+  3-1. index
+---------------------------------------- */
+ .homeNewsBox {
+    overflow: hidden;
+    /* margin-bottom: 15px; */
+    padding-top: 20px;
+    /* margin-bottom: 10px; */
+}
+.homeNewsBox .cateTtl {
+    width: 695px;
+    float: left;
+    /* background-color: #6495ED; */
+    padding-left: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+.homeNewsBox .showList {
+    width: 65px;
+    float: left;
+    left:13px;
+    color: white;
+    padding:0px;
+    position: relative;
+    text-align: left;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+.homeNewsBox .showList:before {
+    content:"";
+    display: block;
+    position: absolute;
+    font-size: 13px;
+    color: #FFFFFF;
+    top: 6px;
+    left: -10px;
+    width: 6px;
+    height: 7px;
+    border-top: 1px solid #ec6c00;
+    border-right: 1px solid #ec6c00;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.homeNewsBox .showList span {
+    display: inline-block;
+    margin-top: -2px;
+    font-size: 13px;
+}
+.homeNewsBox .showListLink {
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size:medium;
+}
+.cateTtl span {
+    font-size: 20px;
+    margin-right: 2px;
+}
+/* ----------------------------------------
+  3-2. login
+---------------------------------------- */
+ #login .loginWrapper {
+    width: 590px;
+    margin:0 auto;
+}
+#login .loginWrapper .loginLogoArea {
+    padding: 6px 0 6px 1px
+}
+#login #header {
+    background-color: #ec6c00;
+    padding-bottom: 5px;
+    margin-bottom: 85px;
+}
+#login #header h1>img {
+    vertical-align: middle;
+}
+#login h2 {
+    font-size: 1.9em;
+    color: white;
+    font-weight: normal;
+    line-height: 1em;
+    letter-spacing: 0.16em;
+    margin:0 0 11px 3px;
+}
+#login .loginArea {
+    background-color:black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login .loginBox {
+    padding: 38px 0 30px 0;
+}
+#login .loginInput {
+    display: block;
+    width: 360px;
+    height: 27px;
+    padding: 0 8px 3px;
+    margin :0 auto 10px;
+}
+#login .loginCheckBoxArea {
+    padding: 8px 0 15px 0;
+    font-size: 13px;
+}
+#login .loginCheckBoxArea p {
+    display:inline;
+}
+#login .loginCheckBox {
+    width: 25px;
+    height: 17px;
+    vertical-align:middle;
+}
+#login .loginBtn {
+    display: block;
+    background-color: black;
+    width: 265px;
+    padding:14px 0;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin :0 auto;
+}
+#login .loginBtn:hover {
+    opacity: 0.8;
+}
+#login .loginAttention p {
+    color: #646464;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+#login .loginLink {
+    background:black;
+    padding: 7px 0 7px 20px;
+    margin-bottom: 108px;
+}
+#login .loginLink li {
+    display: inline;
+    color: #646464;
+}
+#login .loginLink li:after {
+    content:"|";
+    color: white;
+    padding:0 10px 0 15px;
+}
+#login .loginLink a {
+    display: inline;
+    color: white;
+}
+#login .loginLink a:before {
+    content:">";
+    font-size: 10px;
+    padding-right: 5px;
+    color: white;
+}
+/*本文 d-1 02*/
+ .tabelType01.infoBody {
+    margin-bottom: 20px;
+    background-color: black;
+}
+.tabelType02.infoBody {
+    margin-bottom: 20px;
+    background-color: black;
+}
+/* ----------------------------------------
+  3-3. カレンダー
+---------------------------------------- */
+ .calendar {
+    padding-top:33px;
+}
+.calendar .tabelType01 {
+    line-height: 16px;
+}
+.calendar .tabelType01 th {
+    font-size: 13px;
+    padding: 15px 0 15px 9px;
+    width:90px;
+}
+.calendar .tabelType01 td {
+    font-size: 12px;
+    padding: 15px 10px;
+}
+.calendar .tabelType01 td span {
+    font-size: 10px;
+}
+.calenderArrows {
+    width: 35px;
+    float: right;
+}
+.calenderArrows li {
+    display: inline-block;
+}
+.calenderArrows li a:hover {
+    filter: alpha(opacity=70);
+    -moz-opacity:0.70;
+    opacity:0.70;
+}
+#calendar .tabelType01 td.current {
+    background: black;
+}
